@@ -9,6 +9,10 @@ import java.math.MathContext;
 
 import static java.math.BigDecimal.*;
 
+/**
+ * Dynamic encoder.
+ * Sends bits of tag to its listeners.
+ */
 public class Encoder extends AbstractArithmeticCoder {
     private final CodingListener listener;
 

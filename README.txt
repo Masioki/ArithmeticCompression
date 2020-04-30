@@ -30,4 +30,3 @@ Explanation:
     Tag has to be in the same range, so TAG = 0,0...(bin)
     Multiplying by 2 in binary system means shifting left.
     Instead of calculating very small ranges first bits might be send earlier.
-    

@@ -10,6 +10,10 @@ import java.util.List;
 
 import static java.math.BigDecimal.*;
 
+
+/**
+ * Dynamic decoder.
+ */
 public class Decoder extends AbstractArithmeticCoder implements CodingListener {
     private List<Byte> decoded;
     private long decodedLength;

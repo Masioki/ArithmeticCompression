@@ -5,20 +5,16 @@ import java.util.Arrays;
 
 import static java.math.BigDecimal.valueOf;
 
-/**
- * Nie jest to może najpiękniejsza klasa abstrakcyjna, ale przynajmniej nie powtarzam kodu
- */
 public abstract class AbstractArithmeticCoder {
     protected int[] freq;
     protected int counter;
     protected BigDecimal R, L;
 
-    // BigDecimal ma tylko Zero, One, Ten
     public static BigDecimal TWO = valueOf(2);
     public static BigDecimal HALF = valueOf(0.5);
 
     /**
-     * Przygotowuje startowe częstotliwości
+     * Prepares staring frequency table filled with 1.
      */
     protected final void prepareFreq() {
         counter = 256;
@@ -27,8 +23,7 @@ public abstract class AbstractArithmeticCoder {
     }
 
     /**
-     * Aktualizuje model adaptacyjny.
-     * Model jest niezależny od samego kodowania i dekodowania.
+     * Updates frequency table.
      */
     protected final void updateModel(int b) {
         freq[b] += 1;
